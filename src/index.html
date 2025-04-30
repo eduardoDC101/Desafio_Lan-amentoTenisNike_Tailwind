@@ -12,18 +12,20 @@
     />
     <title>Lançamento tênis Nike Air</title>
   </head>
-  <body class="w-full h-full">
+  <body class="w-full h-full overflow-hidden">
     <div
       class="w-full h-screen bg-slate-300 flex items-center justify-center p-3"
     >
       <main
-        class="bg-white h-[540px] w-full max-w-4xl shadow-lg flex flex-col items-center justify-center"
+        class="bg-white h-[540px] w-full max-w-4xl shadow-lg flex flex-col items-center justify-center md:flex-row"
       >
         <div
-          class="w-full md:w-1/2 h-full flex items-center justify-center flex-col"
+          class="w-full md:w-1/2 h-full flex items-center justify-center flex-col group"
         >
           <div class="w-full">
-            <h3 class="hidden md:block text-sm ml-4 font-bold mt-4">
+            <h3
+              class="hidden md:block text-sm ml-4 font-bold mt-4 group-hover:animate-movemove"
+            >
               Eduardo Dourado
             </h3>
           </div>
@@ -32,7 +34,7 @@
             <div class="mb-2">
               <h1 class="text-5xl font-bold mb-2 select-none">
                 Lançamento <br />
-                <p>Nike Air.</p>
+                <p class="group-hover:animate-piscapisca">Nike Air.</p>
               </h1>
               <p class="mb-1">O tênis do futuro.</p>
               <p class="mb-7">O futuro a um passo do seu alcance!</p>
@@ -44,7 +46,16 @@
             </div>
           </div>
         </div>
-        <div>RIGHT</div>
+
+        <div
+          class="h-full w-full flex items-center justify-center bg-tenis bg-no-repeat bg-center bg-cover md:w-1/2"
+        >
+          <img
+            src="./assets/tenis.png"
+            alt="Tênis Nike Air"
+            class="max-w-lg w-11/12 md:w-full object-cover z-30 hover:-rotate-6 hover:scale-110 duration-300 md:hover:scale-125"
+          />
+        </div>
       </main>
     </div>
   </body>
