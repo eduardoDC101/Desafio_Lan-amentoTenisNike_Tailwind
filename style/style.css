@@ -10,6 +10,7 @@
   --color-amarelotenis: rgb(239, 212, 75);
   --color-azultenis: rgb(29, 62, 127);
   --color-verdetenis: rgb(70, 146, 76);
+  --color-cinzaborda: #717171;
 
   @keyframes piscapisca {
     0% {
